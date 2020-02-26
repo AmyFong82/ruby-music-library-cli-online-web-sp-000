@@ -102,12 +102,11 @@ class MusicLibraryController
     input = gets
     list_songs.find do |s|
       s.split(/\.\s|\s\-\s/)
-      s[0] = song_num
-      s[1] = s_artist
-      s[2] = song_name
-      s[3] = s_genre
+      song_num = s[0]
+      s_artist = s[1]
+      song_name = s[2]
       if s[0] == gets
-        puts "Playing #{s[]}"
+        puts "Playing #{}"
         "Playing Larry Csonka by Action Bronson"
   end
 end
