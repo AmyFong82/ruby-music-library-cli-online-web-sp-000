@@ -104,7 +104,7 @@ class MusicLibraryController
     binding.pry
 
     if input.between?(1, songs.length)
-      puts "Playing #{songs[input].name} by #{songs[input].artist.name}"
+      puts "Playing #{songs[input-1].name} by #{songs[input].artist.name}"
     end
   end
 
