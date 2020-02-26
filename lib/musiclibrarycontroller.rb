@@ -104,12 +104,8 @@ class MusicLibraryController
     binding.pry
 
     if input.between?(1, songs.length)
-      puts "Playing #{songs[input].name} by #{songs[input].artist.name}" 
-    end
-    song.find do |s|
-      if input ==
-
-      end
+      puts "Playing #{songs[input].name} by #{songs[input].artist.name}"
     end
   end
+  
 end
