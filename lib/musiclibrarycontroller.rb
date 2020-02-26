@@ -107,6 +107,6 @@ class MusicLibraryController
       song_name = s[2]
       if song_num == gets
         puts "Playing #{song_name} by #{s_artist}"
-        "Playing Larry Csonka by Action Bronson"
+      end
   end
 end
