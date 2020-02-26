@@ -75,8 +75,8 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets
     counter = 0
+    songs = []
     Song.all.select do |s|
       s.artist.name == input
-      puts "#{counter}"
   end
 end
