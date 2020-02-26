@@ -105,7 +105,7 @@ class MusicLibraryController
       song_num = s[0]
       s_artist = s[1]
       song_name = s[2]
-      if s[0] == gets
+      if song_num == gets
         puts "Playing #{}"
         "Playing Larry Csonka by Action Bronson"
   end
