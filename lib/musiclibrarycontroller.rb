@@ -76,6 +76,8 @@ class MusicLibraryController
     input = gets
     counter = 0
     songs = Song.all.select do |s|
-      s.artist.name == input
+              s.artist.name == input
+            end
+    songs = songs.name.sort!
   end
 end
