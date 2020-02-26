@@ -47,8 +47,8 @@ class MusicLibraryController
     songs.each do |s|
       counter+=1
       song_list << "#{counter}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
-      song_list
     end
+    song_list
   end
 
   def list_artists
