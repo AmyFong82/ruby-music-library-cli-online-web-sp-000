@@ -101,6 +101,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_list = list_songs
     input = gets
+    binding.pry
     song_list.find do |s|
       s.split(/\.\s|\s\-\s/)
       song_num = s[0]
