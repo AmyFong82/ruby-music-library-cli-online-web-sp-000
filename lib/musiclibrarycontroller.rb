@@ -32,7 +32,7 @@ class MusicLibraryController
     when "list genre"
       list_songs_by_genre
     when "play song"
-      puts "Playing."
+      play_song
     when "exit"
       exit
     end
