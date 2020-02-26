@@ -96,4 +96,7 @@ class MusicLibraryController
       puts "#{counter+=1}. #{s.artist.name} - #{s.name}"
     end
   end
+
+  def play_song
+  end
 end
