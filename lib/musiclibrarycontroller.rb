@@ -103,15 +103,11 @@ class MusicLibraryController
     songs = list_songs
     binding.pry
 
-
-    # song_list.find do |s|
-    #   s.split(/\.\s|\s\-\s/)
-    #   song_num = s[0]
-    #   s_artist = s[1]
-    #   song_name = s[2]
-    #   if song_num == gets
-    #     puts "Playing #{song_name} by #{s_artist}"
-    #   end
-    # end
+    if input.between? (1, songs.length)
+    song.find do |s|
+      if input ==
+        puts "Playing #{song_name} by #{s_artist}"
+      end
+    end
   end
 end
