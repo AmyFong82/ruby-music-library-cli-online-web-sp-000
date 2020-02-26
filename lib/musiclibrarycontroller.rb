@@ -46,7 +46,8 @@ class MusicLibraryController
     # song_list = []
     songs.each do |s|
       counter+=1
-      puts "#{counter}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
+      song_list << "#{counter}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
+      song_list
     end
   end
 
