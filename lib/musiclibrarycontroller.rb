@@ -43,6 +43,7 @@ class MusicLibraryController
     songs = Song.all
     songs.sort_by!(&:name)
     counter = 0
+    song_list = []
     songs.each do |s|
       counter+=1
       puts "#{counter}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
@@ -101,6 +102,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets
     # binding.pry
+
     # song_list.find do |s|
     #   s.split(/\.\s|\s\-\s/)
     #   song_num = s[0]
