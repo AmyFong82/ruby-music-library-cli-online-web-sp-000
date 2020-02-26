@@ -15,6 +15,7 @@ class Song
     if genre
       self.genre=(genre)
     end
+    save
   end
 
   def save
