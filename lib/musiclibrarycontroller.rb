@@ -99,9 +99,9 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    list_songs
+    song_list = list_songs
     input = gets
-    list_songs.find do |s|
+    song_list.find do |s|
       s.split(/\.\s|\s\-\s/)
       song_num = s[0]
       s_artist = s[1]
