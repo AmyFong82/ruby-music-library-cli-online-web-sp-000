@@ -43,12 +43,10 @@ class MusicLibraryController
     songs = Song.all
     songs.sort_by!(&:name)
     counter = 0
-    # song_list = []
     songs.each do |s|
       counter+=1
-      song_list << "#{counter}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
+       "#{counter}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
     end
-    song_list
   end
 
   def list_artists
