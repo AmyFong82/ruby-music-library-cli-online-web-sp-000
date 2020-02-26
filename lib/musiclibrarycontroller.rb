@@ -101,8 +101,9 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets
     list_songs.find do |s|
-        s.slice(". ")[0] == gets
-        puts "Playing #{}"
-        "Playing Larry Csonka by Action Bronson"
+      s.slice(/. |/)
+      s.slice(". ")[0] == gets
+      puts "Playing #{}"
+      "Playing Larry Csonka by Action Bronson"
   end
 end
