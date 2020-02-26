@@ -77,11 +77,14 @@ class MusicLibraryController
     songs = Song.all.select do |s|
               s.artist.name == input
             end
-            # binding.pry
     songs.sort_by!(&:name)
     counter = 0
     songs.each do |s|
       puts "#{counter+=1}. #{s.name} - #{s.genre.name}"
     end
+  end
+
+  def list_songs_by_genre
+    
   end
 end
