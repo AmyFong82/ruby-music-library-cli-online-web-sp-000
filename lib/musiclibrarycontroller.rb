@@ -108,5 +108,6 @@ class MusicLibraryController
       if song_num == gets
         puts "Playing #{song_name} by #{s_artist}"
       end
+    end
   end
 end
