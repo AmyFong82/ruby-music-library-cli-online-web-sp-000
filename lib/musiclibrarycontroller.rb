@@ -74,10 +74,12 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     input = gets
-    counter = 0
     songs = Song.all.select do |s|
               s.artist.name == input
             end
     songs = songs.name.sort!
+    counter = 0
+    songs.each do |s|
+      puts "#{}"
   end
 end
