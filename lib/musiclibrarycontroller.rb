@@ -101,10 +101,11 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     # songs = list_songs
-    binding.pry
 
     if input.between?(1, Song.all.length)
       song = Song.all.sort!{|a, b| a.name <=> b.name}[input-1]
+      binding.pry
+
     end
     puts "Playing #{song.name} by #{songs.artist.name}"
 
