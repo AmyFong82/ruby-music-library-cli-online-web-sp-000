@@ -81,5 +81,6 @@ class MusicLibraryController
     counter = 0
     songs.each do |s|
       puts "#{counter}. #{s.name} - #{s.genre}"
+    end
   end
 end
