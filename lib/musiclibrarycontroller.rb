@@ -99,7 +99,6 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    song_list = list_songs
     input = gets
     binding.pry
     song_list.find do |s|
